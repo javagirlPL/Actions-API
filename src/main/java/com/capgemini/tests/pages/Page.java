@@ -1,21 +1,21 @@
 package com.capgemini.tests.pages;
 
 public abstract class Page {
-  protected String title;
+    protected String title;
 
-  public Page(String title) {
-    this.title = title;
-  }
+    public Page(String title) {
+        this.title = title;
+    }
 
-  public void open() {
-    System.out.println("Opening page: " + getUrl());
-  }
+    public void open() {
+        System.out.println("Opening page: " + getUrl());
+    }
 
-  protected abstract String getUrl();
+    protected abstract String getUrl();
 
-  public String getTitle() {
-    return title;
-  }
+    public String getTitle() {
+        return title;
+    }
 
-  //todo parametrized open?
+    //todo parametrized open?
 }
